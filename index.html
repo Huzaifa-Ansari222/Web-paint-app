@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Paint App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="parent">
+    <div id="tools">
+    <div class="element">
+        <label for="colorPicker">Choose Brush Color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+    </div>
+
+    <div class="element"> <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="30" value="10">
+    </div>
+
+        <div class="element">
+        <button id="toolToggle">Eraser🧼</button>
+        </div>
+    </div>
+
+    <canvas id="draw"></canvas>
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
